@@ -14,3 +14,8 @@ btn.addEventListener("click",function(){
     box.style.backgroundColor = `rgb(${c1},${c2},${c3})`;
     // console.log("hello");
 })
+
+
+var arr = ["Amit","Sumit","Rajat","Sourav","Ankit","Satvik","Ramesh"];
+var a = Math.floor(Math.random()*arr.length);
+console.log(arr[a]);
