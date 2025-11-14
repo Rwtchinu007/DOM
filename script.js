@@ -1,16 +1,16 @@
-var h1 = document.querySelector("h1")
-var inc = document.querySelector(".inc")
-var dec = document.querySelector(".dec")
-var count = 0
+// var a = Math.random();// range 0 to 1
+// console.log(a);
+// var b = Math.floor(a * 10);// range 0 to 9
+// console.log(b);
 
-inc.addEventListener("click",function(){
-    count++
-    console.log(count)
-    h1.innerText = count
-})
 
-dec.addEventListener("click",function(){
-    count--
-    console.log(count)
-    h1.innerText = count
+var btn = document.querySelector("button")
+var box = document.querySelector(".box")
+
+btn.addEventListener("click",function(){
+    var c1 = Math.floor(Math.random()*256);
+    var c2 = Math.floor(Math.random()*256);
+    var c3 = Math.floor(Math.random()*256);
+    box.style.backgroundColor = `rgb(${c1},${c2},${c3})`;
+    // console.log("hello");
 })
